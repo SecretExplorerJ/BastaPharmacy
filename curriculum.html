@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Overview - Explore Pharma</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<style>/* Color-Changing Background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    animation: changeBackground 10s infinite alternate;
+}
+
+@keyframes changeBackground {
+    0% { background-color: #ff9a9e; }  /* Pink */
+    25% { background-color: #fad0c4; } /* Light Peach */
+    50% { background-color: #a18cd1; } /* Purple */
+    75% { background-color: #fbc2eb; } /* Light Pink */
+    100% { background-color: #8ec5fc; } /* Light Blue */
+}
+
+/* Header */
+header {
+    background: #007BFF;
+    padding: 15px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    background: url('https://source.unsplash.com/1600x900/?pharmacy,medical') center/cover no-repeat;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Home Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #FFD700;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #FFC107;
+    transform: scale(1.1);
+}
+
+/* Content Section */
+.content {
+    padding: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards 0.5s;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+	
+</style>
+    <header>
+        <h1>Pharmacy Program</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="type.html">Program Overview</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Curriculum Overview</h2>
+        <p>Explore the subjects and coursework involved in the Pharmacy Program.</p>
+        <a href="index.html" class="btn">Go to Homepage</a>
+    </section>
+
+    <section class="content">
+        <h2>1st Year, 1st Semester</h2>
+        <ul>
+            <li>Pharmaceutical Calculations and Techniques</li>
+            <li>Perspective in Pharmacy</li>
+            <li>Pharmaceutical Botany with Taxonomy</li>
+            <li>Pharmaceutical Inorganic Chemistry (with Quantitative Analysis)</li>
+            <li><strong>General Education Courses:</strong></li>
+            <ul>
+                <li>Art Appreciation</li>
+                <li>The Contemporary World</li>
+                <li>Physical Activities Towards Health and Fitness 1 (PATHFIT 1)</li>
+                <li>English Enhancement Program 1</li>
+                <li>God's Saving Actions in History, Our Story: From Abraham to Jesus</li>
+                <li>National Service Training Program 1</li>
+            </ul>
+        </ul>
+    </section>
+
+    <section class="content">
+        <h2>1st Year, 2nd Semester</h2>
+        <ul>
+            <li>Pharmaceutical Organic Chemistry</li>
+            <li>Introduction to Pharmacy Administration Management and Leadership</li>
+            <li>Human Anatomy and Physiology with Pathophysiology</li>
+            <li>Pharmaceutical Analysis 1 (Qualitative Pharmaceutical Chemistry)</li>
+            <li><strong>General Education Courses:</strong></li>
+            <ul>
+                <li>Understanding the Self</li>
+                <li>The Life and Works of Rizal</li>
+                <li>English Enhancement Program 2</li>
+                <li>PATHFIT 2 (Exercise-Based Fitness Activities)</li>
+                <li>God in the Life of the Church, In the Sacraments and Beyond</li>
+                <li>National Service Training Program 2</li>
+            </ul>
+        </ul>
+    </section>
+
+    <section class="content">
+        <h2>2nd Year, 1st Semester</h2>
+        <ul>
+            <li>Pharmaceutical Dosage Forms, Drug Delivery Systems, and Medical Policies</li>
+            <li>Dispensing I (Reading and Interpreting Prescriptions)</li>
+            <li>Pharmaceutical Biochemistry</li>
+            <li>Pharmaceutical Microbiology with Parasitology</li>
+            <li>Physical Pharmacy</li>
+            <li><strong>General Education Courses:</strong></li>
+            <ul>
+                <li>Science, Technology, and Society</li>
+                <li>Ethics</li>
+                <li>PATHFIT 3 (Self-Defense)</li>
+                <li>Christian Living</li>
+            </ul>
+        </ul>
+    </section>
+
+    <section class="content">
+        <h2>4th Year, Internship/Practicum</h2>
+        <ul>
+            <li>Experiential Pharmacy Practice in Institutional Pharmacy (120 hrs)</li>
+            <li>Experiential Pharmacy Practice in Public Health and Regulatory Pharmacy (180 hrs)</li>
+            <li>Experiential Pharmacy Practice in Community Pharmacy (300 hrs)</li>
+            <li>Competency Appraisal 1</li>
+            <li>Experiential Pharmacy Practice in Hospital Pharmacy (300 hrs)</li>
+            <li>Experiential Pharmacy Practice in Industrial Pharmacy (300 hrs)</li>
+            <li>Competency Appraisal 2</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Explore Pharma. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

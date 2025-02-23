@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Overview - BS Pharmacy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<style>/* Color-Changing Background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    animation: changeBackground 10s infinite alternate;
+}
+
+@keyframes changeBackground {
+    0% { background-color: #ff9a9e; }  /* Pink */
+    25% { background-color: #fad0c4; } /* Light Peach */
+    50% { background-color: #a18cd1; } /* Purple */
+    75% { background-color: #fbc2eb; } /* Light Pink */
+    100% { background-color: #8ec5fc; } /* Light Blue */
+}
+
+/* Header */
+header {
+    background: #007BFF;
+    padding: 15px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    background: url('https://source.unsplash.com/1600x900/?pharmacy,medical') center/cover no-repeat;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Home Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #FFD700;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #FFC107;
+    transform: scale(1.1);
+}
+
+/* Content Section */
+.content {
+    padding: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards 0.5s;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+	</style>
+    <header>
+        <h1>Pharmacy Program</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="type.html">Program Overview</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Program Overview</h2>
+        <p>Explore the structure and key components of the Bachelor of Science in Pharmacy (BS Pharmacy) program.</p>
+        <a href="index.html" class="btn">Go to Homepage</a>
+    </section>
+
+    <section class="content">
+        <h2>About the BS Pharmacy Program</h2>
+        <p>The Bachelor of Science in Pharmacy (BS Pharmacy) is a four-year undergraduate degree designed to equip students with the knowledge, skills, and competencies required for various pharmacy-related careers.</p>
+        <p>The program integrates pharmaceutical sciences, clinical practice, research, and technology to ensure graduates are well-prepared for roles in community and hospital pharmacies, the pharmaceutical industry, regulatory agencies, and academia.</p>
+    </section>
+
+    <section class="content">
+        <h2>Program Structure</h2>
+
+        <h3>1. General Education Courses</h3>
+        <ul>
+            <li>Purposive Communication</li>
+            <li>Understanding the Self</li>
+            <li>Mathematics in the Modern World</li>
+            <li>The Contemporary World</li>
+            <li>Science, Technology, and Society</li>
+        </ul>
+
+        <h3>2. Professional Courses</h3>
+        <ul>
+            <li><strong>Pharmaceutical Chemistry</strong> – Study of drug composition, synthesis, and analysis.</li>
+            <li><strong>Pharmacognosy</strong> – Exploration of medicinal drugs derived from natural sources.</li>
+            <li><strong>Pharmacology & Toxicology</strong> – Understanding drug effects on the body and toxicological principles.</li>
+            <li><strong>Pharmaceutics</strong> – Focus on drug formulation, compounding, and manufacturing.</li>
+            <li><strong>Clinical Pharmacy & Pharmacotherapeutics</strong> – Application of drug therapy in patient care.</li>
+        </ul>
+
+        <h3>3. Experiential Learning</h3>
+        <ul>
+            <li><strong>Internships</strong> – Supervised rotations in community, hospital, and industrial pharmacy settings.</li>
+            <li><strong>Research & Thesis Work</strong> – Conducting studies to contribute to pharmaceutical advancements.</li>
+        </ul>
+    </section>
+
+    <section class="content">
+        <h2>Integration of Informatics in Pharmacy Education</h2>
+        <p>The BS Pharmacy curriculum in the Philippines now includes pharmacy informatics, ensuring graduates are proficient in using health information systems, electronic medical records (EMRs), and medication management technologies.</p>
+        <p>This integration prepares pharmacy students for roles in clinical decision support, telepharmacy, and digital healthcare innovation.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Explore Pharma. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

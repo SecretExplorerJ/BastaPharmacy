@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Informatics - Videos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #1e3c72, #2a5298, #3b8d99);
+    background-size: 400% 400%;
+    animation: gradientBG 10s infinite alternate;
+    color: white;
+    text-align: center;
+}
+
+/* Animating Background */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Navbar */
+.menu {
+    list-style: none;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    display: block;
+}
+
+/* Gallery */
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-container video {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+}.video-container {
+    text-align: center; /* Centers the video */
+    margin: 20px auto;
+}
+
+video {
+    width: 100%; /* Makes it responsive */
+    max-width: 640px; /* Sets a max width */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+}
+
+</style>
+    <header>
+        <h1>Pharmacy Informatics - Videos</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="type.html">Program Overview</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li class="dropdown">
+                    <a href="#">Social Proofs  ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Photo.html">Photos</a></li>
+                        <li><a href="Videos.html">Videos</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="video-gallery">
+        <h2>Videos</h2>
+    
+            <video controls>
+                <source src="stud.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+       
+    </section>
+	 <section class="video-gallery">
+        <h2>Videos</h2>
+     
+            <video controls>
+                <source src="stud2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+       
+    </section>
+	 <section class="video-gallery">
+        <h2>Videos</h2>
+     
+            <video controls>
+                <source src="promotional ad.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+       
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Explore Pharma. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

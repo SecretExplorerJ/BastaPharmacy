@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Program</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        /* Background Animation */
+        @keyframes backgroundAnimation {
+            0% { background-color: #ff9a9e; }  /* Pink */
+            25% { background-color: #fad0c4; } /* Light Peach */
+            50% { background-color: #a18cd1; } /* Purple */
+            75% { background-color: #fbc2eb; } /* Light Pink */
+            100% { background-color: #8ec5fc; } /* Light Blue */
+        }
+
+        /* Header */
+        header {
+            background: #007BFF;
+            padding: 15px;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .menu a:hover {
+            color: #FFD700;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 20px;
+            background: url('https://source.unsplash.com/1600x900/?pharmacy,medical') center/cover no-repeat;
+            color: white;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        /* Button Animation */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #FFD700;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #FFC107;
+            transform: scale(1.1);
+        }
+
+        /* Content Section */
+        .content {
+            padding: 50px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards 0.5s;
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Footer */
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+		/* Navigation Menu Styling */
+.menu {
+    list-style: none;
+    background-color: #0073e6;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #005bb5;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #0073e6;
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    float: none;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+<center>
+    <header>
+		 <img src="uls.jpg" alt="Pharmacy Logo" style="height: 100px; vertical-align: middle; margin-right: 10px;">
+    <h1 style="display: inline;">Explore Pharma - Discover the World of Pharmacy</h1>
+		<h4>Your Journey to a Rewarding Career in Pharmacy Begins Here.</h2>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <nav>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="type.html">Program Overview</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="careers.html">Careers</a></li>
+
+        <!-- Correct Dropdown Structure -->
+        <li class="dropdown">
+            <a href="#">Social Proofs ▼</a> <!-- This is now inside the <li> -->
+            <ul class="dropdown-menu">
+                <li><a href="Pharmacy-Informatics.html"></a></li>
+                <li><a href="Photo.html">Photos</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+				<li><a href="Phar.html">Pharmacy Informatics</a></li>
+            </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    </header>
+</center>
+    <section class="hero" id="home">
+        <h2>Welcome to Pharmacy </h2>
+        <p>Learn about patient care, and the pharmaceutical industry.</p>
+        <a href="#types" class="btn">Learn More</a>
+    </section>
+
+    <section class="content">
+        <h2>Introduction to the Pharmacy Program</h2>
+        <p>The Pharmacy program is a journey into the world of medicines, where science and healthcare come together to improve lives. It teaches students how drugs are developed, how they work in the body, and how they can be used safely and effectively.</p>
+        <p>Pharmacists do more than just dispense medicines—they guide patients, prevent harmful drug interactions, and promote better health through expert advice.</p>
+    </section>
+
+    <section class="content" id="types">
+        <h2>Types of Pharmacy Programs</h2>
+        <ul>
+            <li><strong>Bachelor of Science in Pharmacy (BPharm or BSPharm)</strong> – 4-year undergraduate program covering pharmaceutical sciences.</li>
+            <li><strong>Doctor of Pharmacy (PharmD)</strong> – 4–6 years focusing on clinical pharmacy and patient care.</li>
+            <li><strong>Master’s in Pharmacy (MPharm)</strong> – 2-year graduate program specializing in research and regulatory affairs.</li>
+            <li><strong>PhD in Pharmacy</strong> – 3–5 years for academic, research, and industry careers.</li>
+        </ul>
+    </section>
+
+    <section class="content" id="subjects">
+        <h2>Core Subjects in a Pharmacy Program</h2>
+        <ul>
+            <li>Pharmacology – Study of drug effects on the body</li>
+            <li>Pharmaceutics – Formulation and manufacturing of medicines</li>
+            <li>Medicinal Chemistry – Design and synthesis of pharmaceuticals</li>
+            <li>Clinical Pharmacy – Patient-centered medication therapy</li>
+            <li>Pharmacy Law and Ethics – Legal and ethical aspects of pharmacy practice</li>
+        </ul>
+    </section>
+
+    <section class="content" id="skills">
+        <h2>Skills Developed in a Pharmacy Program</h2>
+        <ul>
+            <li>Medication counseling and patient care</li>
+            <li>Prescription review and dispensing</li>
+            <li>Drug formulation and compounding</li>
+            <li>Research and data analysis</li>
+            <li>Communication and teamwork in healthcare settings</li>
+        </ul>
+    </section>
+
+    <section class="content" id="careers">
+        <h2>Career Opportunities After a Pharmacy Program</h2>
+        <ul>
+            <li>Community and Hospital Pharmacies – Dispensing and managing medications</li>
+            <li>Pharmaceutical Industry – Research, development, and production of drugs</li>
+            <li>Regulatory Agencies – Ensuring drug safety and compliance</li>
+            <li>Academia and Research – Teaching and conducting pharmaceutical research</li>
+            <li>Clinical Pharmacy – Direct patient care in hospitals and healthcare institutions</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Explore Pharma. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".content");
+
+            const revealSection = () => {
+                sections.forEach((section) => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    if (sectionTop < window.innerHeight - 100) {
+                        section.style.opacity = "1";
+                        section.style.transform = "translateY(0)";
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", revealSection);
+            revealSection();
+        });
+    </script>
+
+</body>
+</html>

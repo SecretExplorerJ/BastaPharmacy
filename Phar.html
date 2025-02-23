@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Informatics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<style>
+	body {
+    font-family: Arial, sans-serif;
+    color: #fff; /* White text for readability */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    animation: rainbowBG 10s linear infinite;
+    background-size: 400% 400%;
+}
+
+/* 🌈 Rainbow Background Animation */
+@keyframes rainbowBG {
+    0% { background-color: #ff0000; }  /* Red */
+    16% { background-color: #ff8000; } /* Orange */
+    33% { background-color: #ffff00; } /* Yellow */
+    50% { background-color: #00ff00; } /* Green */
+    66% { background-color: #0000ff; } /* Blue */
+    83% { background-color: #8000ff; } /* Purple */
+    100% { background-color: #ff0000; } /* Back to Red */
+}
+
+/* Navigation Menu */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: black;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover {
+    background: grey;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: black;
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Content */
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+</style>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="type.html">Program Overview</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li class="dropdown">
+                <a href="#">Pharmacy Informatics ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="photo.html">Photos</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Pharmacy Informatics</h1>
+        <h2>How Pharmacy Informatics is Shaping the Future of Pharmacy Practice?</h2>
+        <p>Pharmacy informatics is transforming the future of pharmacy practice by integrating technology to improve patient care, medication safety, and workflow efficiency. With advancements in electronic health records (EHRs) and computerized physician order entry (CPOE), pharmacists can access real-time patient data, reduce medication errors, and ensure accurate dispensing. Automation and artificial intelligence (AI) enhance pharmacy operations through robotic dispensing, predictive analytics for inventory management, and drug interaction detection. Telepharmacy further expands access to pharmaceutical care, enabling remote consultations, medication counseling, and monitoring services. As pharmacy informatics continues to evolve, it streamlines processes, enhances patient outcomes, and reinforces the role of pharmacists in a digital healthcare system.
+</p>
+
+        <h2>The impact of pharmacy informatics in improving patient safety and optimizing medication therapies.
+</h2>
+        <p>Pharmacy informatics plays a vital role in improving patient safety and optimizing medication therapies by integrating technology into pharmacy practice. Through electronic health records (EHRs) and computerized physician order entry (CPOE), pharmacists can access real-time patient data, reducing the risk of medication errors and ensuring proper dosing. Automated dispensing systems and barcode verification help prevent dispensing mistakes, while predictive analytics assist in detecting potential drug interactions and adverse effects. Telepharmacy also enhances patient care by providing remote counseling and monitoring, ensuring medication adherence. By streamlining processes and enhancing accuracy, pharmacy informatics significantly improves patient safety and contributes to more effective and personalized medication therapies.
+</p>
+
+        <h2>Emerging technologies and trends in pharmacy (e.g., AI in drug development, e-health records).
+</h2>
+        <p>Emerging technologies are transforming pharmacy by enhancing drug development, patient care, and medication management. Artificial intelligence (AI) accelerates drug discovery by analyzing vast datasets to identify potential drug candidates and predict their effectiveness. E-health records (EHRs) streamline patient data management, allowing pharmacists to access medical histories, monitor prescriptions, and reduce medication errors. Automation and robotics improve dispensing accuracy and workflow efficiency, while telepharmacy expands access to pharmaceutical care through remote consultations and medication monitoring. Additionally, blockchain technology enhances drug traceability and prevents counterfeit medicines. As these innovations continue to evolve, they shape a more efficient, data-driven, and patient-centered pharmacy practice.
+</p>
+    </div>
+</body>
+</html>

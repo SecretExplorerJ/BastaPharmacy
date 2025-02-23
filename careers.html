@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Opportunities - Pharmacy Program</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<style>/* Color-Changing Background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    animation: changeBackground 10s infinite alternate;
+}
+
+@keyframes changeBackground {
+    0% { background-color: #ff9a9e; }  /* Pink */
+    25% { background-color: #fad0c4; } /* Light Peach */
+    50% { background-color: #a18cd1; } /* Purple */
+    75% { background-color: #fbc2eb; } /* Light Pink */
+    100% { background-color: #8ec5fc; } /* Light Blue */
+}
+
+/* Header */
+header {
+    background: #007BFF;
+    padding: 15px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    background: url('https://source.unsplash.com/1600x900/?pharmacy,medical') center/cover no-repeat;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Home Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #FFD700;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #FFC107;
+    transform: scale(1.1);
+}
+
+/* Content Section */
+.content {
+    padding: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards 0.5s;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+	
+</style>
+    <header>
+        <h1>Pharmacy Program</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="type.html">Program Overview</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Career Opportunities</h2>
+        <p>Explore the diverse career paths available for Pharmacy graduates.</p>
+        <a href="index.html" class="btn">Go to Homepage</a>
+    </section>
+
+    <section class="content">
+        <h2>Pharmacy Career Paths</h2>
+
+        <div class="career">
+            <h3>Community Pharmacist</h3>
+            <p>Dispenses medications, provides patient counseling, and ensures safe medication use in retail pharmacies.</p>
+        </div>
+
+        <div class="career">
+            <h3>Hospital Pharmacist</h3>
+            <p>Works in healthcare facilities, collaborating with doctors and nurses to optimize medication therapies for patients.</p>
+        </div>
+
+        <div class="career">
+            <h3>Clinical Pharmacist</h3>
+            <p>Specializes in direct patient care, monitoring drug therapies and advising healthcare teams on treatment plans.</p>
+        </div>
+
+        <div class="career">
+            <h3>Industrial Pharmacist</h3>
+            <p>Involved in drug research, development, manufacturing, and quality control within pharmaceutical companies.</p>
+        </div>
+
+        <div class="career">
+            <h3>Regulatory Pharmacist</h3>
+            <p>Ensures compliance with government regulations on drug safety, efficacy, and distribution.</p>
+        </div>
+
+        <div class="career">
+            <h3>Academician or Researcher</h3>
+            <p>Conducts studies on new drugs, teaches in universities, and contributes to pharmaceutical advancements.</p>
+        </div>
+
+        <div class="career">
+            <h3>Public Health Pharmacist</h3>
+            <p>Works in government agencies or NGOs to develop medication policies, promote health education, and manage drug distribution programs.</p>
+        </div>
+
+        <div class="career">
+            <h3>Informatics Pharmacist</h3>
+            <p>Integrates technology into pharmacy practice, managing electronic health records and medication safety systems.</p>
+        </div>
+
+        <div class="career">
+            <h3>Nuclear Pharmacist</h3>
+            <p>Specializes in preparing and handling radioactive drugs used for medical imaging and treatments.</p>
+        </div>
+
+        <div class="career">
+            <h3>Veterinary Pharmacist</h3>
+            <p>Focuses on medication therapy for animals in veterinary clinics, hospitals, or the pet industry.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Explore Pharma. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
